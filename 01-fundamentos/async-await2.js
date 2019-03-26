@@ -49,6 +49,6 @@ let getInfomarcion = async id => {
     return `${ans.nombre} tiene un salario de $${ans.salario}`
 }
 
-getInfomarcion(3)
+getInfomarcion(1)
     .then(mensaje => console.log(mensaje))
     .catch(err => console.log(err))
