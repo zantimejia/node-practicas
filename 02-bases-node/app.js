@@ -1,7 +1,7 @@
 const argv = require('./config/yargs').argv
+const colors = require('colors')
     // const multiplicar = require('./multiplicar/multiplicar')
 const { crearArchivo, listarTabla } = require('./multiplicar/multiplicar') //Destructuracion
-console.log('yargs: ', argv);
 let command = argv._[0]
 switch (command) {
     case 'listar':

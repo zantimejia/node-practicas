@@ -44,7 +44,8 @@ let getSalario = (empleado) => {
 }
 
 getEmpleado(1).then(empleado => {
-        //console.log(`Empleado de BD ${empleado}`); * WHY ?
+        // console.log(`Empleado de BD ${JSON.stringify(empleado)}`); //* WHY ?
+        console.log(`Empleado de BD ${toString(empleado)}`); //* WHY ?
         // console.log('Empleado de BD ', empleado);
         return getSalario(empleado)
     })
